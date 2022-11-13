@@ -1,0 +1,189 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    background-color: #335c78;
+}
+
+.main-contents {
+    width: 80%;
+    margin: 2rem auto;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+}
+
+.left-section {
+    grid-column: span 2;
+    height: 100%;
+    background-color: #267176;
+}
+
+.right-section {
+    grid-column: span 5;
+    height: 100%;
+    background-color: #eef2f5;
+}
+
+.left-section-contents{
+    padding: 22px 22px;
+}
+
+.profile {
+    width: 100%;
+    border-bottom: 2px solid #1a232b;
+}
+
+.profile .profile-image {
+    width: 100%;
+    border-radius: 50%;
+    border: 8px solid #131d27;
+}
+
+.name {
+    color: #D6DBDF;
+    font-size: 29px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: bold;
+    padding: 12px;
+}
+
+.profession {
+    color: #ed9e4e;
+    font-size: 18px;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 2.5px;
+    font-weight: bold;
+    padding-bottom: 16px;
+}
+
+.left-title {
+    color: #d8e5ef;
+    font-size: 20px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    padding-top: 48px;
+}
+
+.contact-info ul {
+    padding-top: 24px;
+}
+
+.contact-info ul li,
+ ul li {
+    padding: 7px 0;
+    color: #ffffffaf;
+    font-size: 18px;
+    letter-spacing: 1px;
+    display: flex;
+    align-items: center;
+}
+
+.contact-info ul li i,
+ ul li i {
+    padding-right: 16px;
+    font-size: 18px;
+    color: #0e97f1;
+}
+
+.skills ul {
+    padding-top: 25px;
+}
+.skills ul li p {
+    padding: 7px 0;
+    color: #ffffffaf;
+    font-size: 18px;
+    letter-spacing: 1px;
+    display: flex;
+    align-items: center;
+    text-transform: uppercase;
+}
+
+.right-section-contents {
+    padding: 2rem 2rem;
+}
+
+.right-title {
+    color: #1e2935;
+    font-size: 40px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    padding: 30px 0;
+    position: relative;
+}
+
+
+.about-me-contents {
+    font-size: 17px;
+    letter-spacing: 1px;
+    line-height: 30px;
+}
+
+.experience-contents,
+.education-contents {
+    display: grid;
+    /* That means that is divided in 2 sections
+    1-The place of the job
+    2-What job i do and "1fr" it's a fraction of the grid
+    */
+    grid-template-columns: repeat(2, 1fr); 
+    padding-bottom: 25px;
+}
+
+.exp-company-name,
+.education-school-name {
+    font-size: 23px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #2f8a9e;
+    padding-bottom: 12px;
+}
+
+.exp-time-period,
+.educationp-time-period {
+    font-size: 18px;
+    letter-spacing: 1px;
+    line-height: 25px;
+}
+
+.exp-position,
+.education-subject{
+    font-size: 25px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #2f6e9e;
+    padding-bottom: 12px;
+}
+
+.exp-desc,
+.education-desc {
+    font-size: 16px;
+    letter-spacing: 1px;
+    line-height: 26px;
+    border-left: 3px solid #a5a3a3;
+    padding-left: 5px;
+}
+
+/* Media queries for the size of the screen to adjust */
+/*This media screen is for when the size of the page is to small, without this the page dosen't look good when the width is small*/
+@media screen and (max-width:1200px) {
+    .main-contents {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
